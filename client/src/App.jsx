@@ -1,7 +1,12 @@
 import react from 'react';
-
-export default function App(){
+import NavBar from './components/NavBar.jsx';
+import Home from './components/Home.jsx';
+function App(){
   return(
-    <div>App</div>
+    <div>
+      <NavBar/>
+      <Home/>
+    </div>
   )
 }
+export default App;

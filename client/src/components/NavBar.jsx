@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes} from "react-icons/fa"
-
+import SignatureImage from "../assets/text-1691684988548.png"
 const NavBar = () => {
 
   const [nav,setNav]= useState(false);
@@ -29,9 +29,9 @@ const NavBar = () => {
   ]
 
   return (
-    <div className=" flex justify-between items-center w-full h-20 px-4 text-black bg-slate-200 fixed">
+    <div className=" flex justify-between items-center w-full h-20 px-4 text-black bg-white fixed">
         <div>
-            <h1 className="text-5xl font-signature ml-2">Rishav Raj</h1>
+            <img src={SignatureImage} alt="my profile" className="rounded-2xl w-60" />
         </div>
 
         <ul className="hidden md:flex">
@@ -42,7 +42,7 @@ const NavBar = () => {
             ))}
         </ul>
 
-        <div onClick={() =>setNav(!nav)} className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden">
+        <div onClick={() =>setNav(!nav)} className="cursor-pointer pr-4 z-10 text-gray-800 md:hidden">
           {nav ? <FaTimes size={30}/> : <FaBars size={30}/>}
         </div>
 
