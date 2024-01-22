@@ -4,6 +4,7 @@ import Home from './components/Home.jsx';
 import SocialLinks from './components/SocialLinks.jsx';
 import About from './components/About.jsx';
 import Portfolio from './components/Portfolio.jsx';
+import Experience from './components/Experience.jsx';
 
 function App(){
   return(
@@ -11,7 +12,8 @@ function App(){
       <NavBar/>
       <Home/>
       <About/>
-      <Portfolio/>   
+      <Portfolio/> 
+      <Experience/>  
 
       <SocialLinks/>
     </div>
